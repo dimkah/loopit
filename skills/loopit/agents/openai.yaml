@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loopit"
+  short_description: "Execute plans with human checkpoints"
+  default_prompt: "/loopit [plan path]"

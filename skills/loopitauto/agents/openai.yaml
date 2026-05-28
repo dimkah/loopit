@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loopit Auto"
+  short_description: "Execute plans through Superpowers subagents"
+  default_prompt: "/loopitauto [plan path]"
