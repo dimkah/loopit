@@ -57,11 +57,14 @@ After setup, tell the user to restart the agent session and invoke `/loopit` aga
 5. Report briefly what changed, what verification ran, and any blocker or risk.
 6. Wait for user approval before continuing.
 7. Before claiming completion, use `superpowers:verification-before-completion`.
+8. Finish through `superpowers:finishing-a-development-branch`: present its options and wait for the user's explicit choice.
 
 ## Rules
 
 - Do not duplicate detailed Superpowers workflow instructions.
 - Do not continue past a chunk until the user approves.
+- Stay in `superpowers:executing-plans` even where it recommends switching to `superpowers:subagent-driven-development`. Human checkpoints are the point of `/loopit`; autonomous execution is `/loopitauto`.
+- Never merge, push, open a PR, or delete a branch without an explicit user choice from the finishing options. Chunk approval — including "ok" or "finish up" on the last chunk — approves that chunk only; it does not select an integration option the user has not seen. After the options are presented, a reply that does not name a specific option is not a choice — ask again.
 - Respect local repository instructions, especially commit message and verification rules.
 - Do not run intrusive full builds unless repository instructions or concrete risk justify them.
 - Match the user's language.

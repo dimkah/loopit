@@ -60,6 +60,7 @@ After setup, tell the user to restart the agent session and invoke `/loopitauto`
 
 - Do not duplicate detailed Superpowers workflow instructions.
 - Do not ask for per-chunk approval unless blocked or the plan is ambiguous.
+- Autonomy ends at implementation. At `superpowers:finishing-a-development-branch`, always present the options and wait for the user's explicit choice — never merge, push, or open a PR on your own. Blanket pre-authorization ("do it all yourself") does not select an integration option; the no-approval rule covers plan chunks only. After the options are presented, a reply that does not name a specific option is not a choice — ask again.
 - Respect local repository instructions, especially commit message and verification rules.
 - Do not run intrusive full builds unless repository instructions or concrete risk justify them.
 - Match the user's language.
