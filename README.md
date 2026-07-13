@@ -23,6 +23,7 @@ approved plan
   -> wait for "ok"
   -> repeat until done
   -> final verification
+  -> merge / PR / keep: your explicit choice
 ```
 
 ## `/loopitauto`
@@ -37,7 +38,7 @@ approved plan
   -> per-task review/fix loop
   -> final review
   -> final verification
-  -> branch finish / PR workflow
+  -> waits for your merge / PR choice
 ```
 
 ## Examples
